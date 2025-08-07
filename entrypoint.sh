@@ -1,7 +1,5 @@
 #!/bin/sh
-
-# Start cron in the background
-cron -L 15
+crond -d 8 -c /etc/crontabs/ 
 
 # Start nginx in the foreground
 nginx -g 'daemon off;'
