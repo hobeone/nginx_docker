@@ -1,4 +1,4 @@
-name: Publish Docker image
+nginxname: Publish Docker image
 
 on:
   push:
@@ -23,4 +23,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/jwt_validator:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/nginx:latest
